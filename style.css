@@ -1,0 +1,260 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVBAR */
+
+.logo-width {
+  width: 45px;
+}
+
+.logo-text {
+  font-size: 12px;
+}
+
+li:not(:last-child) {
+  margin-right: 100px;
+}
+
+.nav-link {
+  transition: 0.5s ease-out !important;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  transition: 0.5s ease-out !important;
+  color: white !important;
+  text-decoration: underline;
+  background-color: black;
+}
+
+.btn-ul {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.offcanvas-end {
+  width: 100% !important;
+}
+
+/* NAVBAR */
+
+/*  */
+
+/* BANNER */
+
+.banner-section {
+  height: calc(100vh - 238.22px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./Images/Brainster\ Background\ 1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  margin-top: 130px;
+}
+.banner-text {
+  color: #ffc107;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.banner-text h1 {
+  font-size: 100px !important;
+  font-weight: 900 !important;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+/* BANNER */
+
+/*  */
+
+/* FILTERS */
+
+input,
+label {
+  cursor: pointer;
+}
+
+.filter {
+  cursor: pointer;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input.checkbox:checked + label:before {
+  content: "";
+}
+label {
+  margin: 0;
+}
+.filters {
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+#checkboxes input[type="checkbox"]:checked + .filters {
+  background-color: #bb2d3b;
+  color: black;
+  outline: 1 solid white;
+}
+
+/* FILTERS */
+
+/*  */
+
+/* CARDS */
+
+.zoom {
+  transition: transform 0.4s;
+}
+
+.zoom:hover {
+  transform: scale(1.06);
+}
+
+.card {
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 32%;
+}
+.card:not(:last-child) {
+  margin-right: 17.5px;
+}
+
+.card-info {
+  width: fit-content;
+  font-weight: bold;
+  background-color: #fcd232;
+}
+
+/* CARDS */
+
+/*  */
+
+/* FOOTER */
+
+.footer {
+  background-color: #212529;
+}
+
+/* FOOTER */
+
+/*  */
+
+/* FORM */
+
+.form {
+  margin-top: 118.94px;
+  min-height: calc(100vh - 118.94px);
+}
+.form-container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.col-lg-6 {
+  position: relative;
+}
+.invalid-feedback {
+  position: absolute;
+  margin-top: -15px;
+}
+
+.form-control,
+.form-select,
+.s-btn {
+  margin-bottom: 20px;
+}
+.form b {
+  display: none;
+}
+
+.message-after {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc107;
+}
+.uapp {
+  cursor: pointer;
+}
+
+/* FORM */
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: inherit;
+    width: fit-content;
+    transition: 0.5s ease-out !important;
+  }
+  .nav-link:hover {
+    transition: 0.5s ease-out !important;
+    color: #ffc107 !important;
+  }
+
+  .offcanvas-header .btn-close {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    font-size: 25px;
+  }
+
+  .banner-text h1 {
+    font-size: 50px !important;
+    font-weight: 900 !important;
+    width: fit-content;
+  }
+
+  .filter {
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .s-btn {
+    margin-top: 100px;
+  }
+
+  .form-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card:not(:last-child) {
+    margin-right: auto;
+  }
+}

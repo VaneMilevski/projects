@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="brainster icon" href="./Images/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brainster-Vane Milevski</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/e2d4b2d900.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-warning">
+    <!-- NAVBAR -->
+    <nav class="navbar bg-warning p-0 navbar-expand-lg fixed-top">
+      <div class="container-fluid p-4">
+        <a
+          class="navbar-brand d-flex justify-content-center flex-column align-items-center"
+          href="./index.html"
+          ><img src="./Images/Logo.png" class="logo-width" alt="Logo" />
+          <span class="text-uppercase fw-bold logo-text">brainster</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          data-bs-theme="dark"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-bold"
+                  aria-current="page"
+                  href="https://brainster.co/marketing/"
+                  target="_blank"
+                  >Академија за маркетинг</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-bold"
+                  aria-current="page"
+                  href="https://brainster.co/full-stack/"
+                  target="_blank"
+                  >Академија за програмирање</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-bold"
+                  aria-current="page"
+                  href="https://brainster.co/data-science/"
+                  target="_blank"
+                  >Академија за data science</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-bold"
+                  aria-current="page"
+                  href="https://brainster.co/graphic-design/"
+                  target="_blank"
+                  >Академија за дизајн</a
+                >
+              </li>
+              <li>
+                <a href="./form.php" target="_blank"
+                  ><button type="button" class="btn btn-danger fw-bold btn-ul">
+                    Вработи наш студент
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!--  -->
+
+    <!-- BANNER -->
+
+    <div class="container-fluid banner-section">
+      <div class="banner-text">
+        <h1>brainster</h1>
+      </div>
+    </div>
+
+    <!-- BANNER -->
+
+    <!--  -->
+
+    <!-- FILTERS -->
+    <div class="container-fluid px-0 filters-pos">
+      <div class="filters row bg-dark text-light m-0">
+        <div id="checkboxes" class="col-12 col-lg-4 h6 m-0 p-0 filter">
+          <input type="checkbox" class="" id="filter-marketing" />
+          <label class="w-100 h-100 fw-bold p-4 filters" for="filter-marketing"
+            ><div class="row py-3 m-0 border-color align-items-center">
+              <div class="col">
+                Проекти на студентите по академија за маркетинг
+              </div>
+              <div class="col-2 text-center">
+                <i class="fs-3 fa-solid fa-circle-check text-dark"></i>
+              </div></div
+          ></label>
+        </div>
+        <div id="checkboxes" class="col-12 col-lg-4 h6 m-0 p-0 filter">
+          <input type="checkbox" class="" id="filter-coding" />
+          <label class="w-100 h-100 fw-bold p-4 filters" for="filter-coding"
+            ><div class="row py-3 m-0 border-color align-items-center">
+              <div class="col">
+                Проекти на студенти по академијата за програмирање
+              </div>
+              <div class="col-2 text-center">
+                <i class="fs-3 fa-solid fa-circle-check text-dark"></i>
+              </div></div
+          ></label>
+        </div>
+        <div id="checkboxes" class="col-12 col-lg-4 h6 m-0 p-0 filter">
+          <input type="checkbox" class="" id="filter-design" />
+          <label class="w-100 h-100 fw-bold p-4 filters" for="filter-design"
+            ><div class="row py-3 m-0 border-color align-items-center">
+              <div class="col">
+                Проекти на студенти по академијата за дизајн
+              </div>
+              <div class="col-2 text-center">
+                <i class="fs-3 fs-5 fa-solid fa-circle-check text-dark"></i>
+              </div></div
+          ></label>
+        </div>
+      </div>
+    </div>
+    <!-- FILTERS -->
+
+    <!--  -->
+
+    <!-- CARDS -->
+
+    <div class="cards container">
+      <h2 class="text-center py-5 m-0 fw-bold h1">Проекти</h2>
+      <div class="row justify-content-start g-4 tab-resp">
+        <div class="col-md-6 col-lg-4 card marketing zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/developer-books_KAUFJW1PEQ.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за маркетинг</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/computer-mac_825303XHAE.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card design zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/business-people_PAQJGIXNYI.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за дизајн</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card marketing zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/mac-apple_6ICJXP5TZB.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за маркетинг</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/laptop-working_DOLNAISHLZ.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card design zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/office-work_N0ZRKV9CI6.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за дизајн</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card marketing zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/woman-coding zoom_JLRCGJRKYJ.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за маркетинг</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/developer-discuss_OEIJJX36TI.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card design zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/business-people_WC6HIXVOYF.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за дизајн</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card marketing zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/working-family_ZGZCECPM7E.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за маркетинг</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/business-man_H8PHYPQ7O8.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card design zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/couple-bedroom_K2GKUCGSH1.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за дизајн</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card marketing zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/business-man_VISYYURYFA.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за маркетинг</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/top-workspace_ILQA1VXXOJ.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card marketing zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/laptop-work_8Q2MXCDVMY.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за маркетинг</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/women-working_EVIDLDTDO3.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/laptop-work_D8MPRQM38G.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/laptop-working_N14GO3XZE6.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/laptop-working_KXS9FEB2UE.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 card coding zoom p-0">
+          <a href="#">
+            <img
+              src="https://cdn.stocksnap.io/img-thumbs/960w/laptop-typing_JXHUVN906T.jpg"
+              class="card-img-top"
+              alt="random-pic"
+            />
+            <div class="card-body">
+              <div class="card-info px-3 py-2 mb-2">
+                <span>Академија за програмирање</span>
+              </div>
+              <h5 class="card-title">Име на проектот стои овде во две линии</h5>
+              <p class="card-text">
+                Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.
+              </p>
+              <p class="card-text fw-bold fs-12">Март 2024</p>
+              <div class="text-end">
+                <a href="#" class="btn btn-danger px-4">Дознај повеќе</a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS -->
+
+    <!--  -->
+
+    <!-- FOOTER -->
+    <div class="footer text-center bg-dark text-light fw-bold py-4 mt-5">
+      Изработено со ❤️ од студентите на Brainster
+    </div>
+    <!-- FOOTER -->
+    <script>
+      document
+        .querySelector("#filter-coding")
+        .addEventListener("change", filterCoding);
+      document
+        .querySelector("#filter-design")
+        .addEventListener("change", filterDesign);
+      document
+        .querySelector("#filter-marketing")
+        .addEventListener("change", filterMarketing);
+
+      function filterCoding() {
+        hideAllCards();
+
+        if (document.querySelector("#filter-coding").checked) {
+          var codingCards = document.querySelectorAll(".coding");
+          codingCards.forEach((codingCard) => {
+            codingCard.style.display = "inline-block";
+          });
+
+          document.querySelector("#filter-design").checked = false;
+          document.querySelector("#filter-marketing").checked = false;
+        } else {
+          showAllCards();
+        }
+      }
+
+      function filterDesign() {
+        hideAllCards();
+
+        if (document.querySelector("#filter-design").checked) {
+          var designCards = document.querySelectorAll(".design");
+          designCards.forEach((designCard) => {
+            designCard.style.display = "inline-block";
+          });
+
+          document.querySelector("#filter-coding").checked = false;
+          document.querySelector("#filter-marketing").checked = false;
+        } else {
+          showAllCards();
+        }
+      }
+
+      function filterMarketing() {
+        hideAllCards();
+
+        if (document.querySelector("#filter-marketing").checked) {
+          var marketingCards = document.querySelectorAll(".marketing");
+          marketingCards.forEach((marketingCard) => {
+            marketingCard.style.display = "inline-block";
+          });
+
+          document.querySelector("#filter-design").checked = false;
+          document.querySelector("#filter-coding").checked = false;
+        } else {
+          showAllCards();
+        }
+      }
+
+      function hideAllCards() {
+        var allCards = document.querySelectorAll(".card");
+
+        allCards.forEach((card) => {
+          card.style.display = "none";
+        });
+      }
+
+      function showAllCards() {
+        var allCards = document.querySelectorAll(".card");
+
+        allCards.forEach((card) => {
+          card.style.display = "inline-block";
+        });
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
